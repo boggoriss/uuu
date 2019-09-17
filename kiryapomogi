@@ -1,57 +1,24 @@
 #include <stdio.h>
-#define N 20 
 
-
-int max (int * arr[], int n )
+void  is_n(float x, float y )
 {
 
-int m ;
 
-for( int i = 0; i < n ; i++  )
-{
+    float r = sqrt( x * x + y * y )  ;
 
-if( arr[i] > m  )
-{
-         m = arr[i];
+        if( x <= 1 && y <= 1 && r > 1 && x > 0 && y > 0  ){
+
+     printf("true");
+
+
+     }
+
+     else
+     {
+     printf("false");
+     }
+
+
 }
 
-}
-return m ;
-
-}
-
-
-
-
-int main()
-{
-
-        int arr[N] ;
-        char c ;
-        int n = 0 ;
-
-        for( n ; n < N ; n++)
-        {
-
-                scanf("%d%c", &arr[n], &c );
-
-                if ( c == '\n' )
-        {
-                ++n ;
-                break;
-        }
-        }
-
-         //
-int *arr[n];
-*arr[n] = &arr[n];
-
-int m = max( arr[n],n );
-
-printf("%d",m);
-         //
-
-return 0 ;
-         
-}
-
+  
